@@ -31,20 +31,20 @@
     return false;
   });
 
-	/*--/ Star ScrollTop /--*/
+	/*--/ Start ScrollTop /--*/
 	$('.scrolltop-mf').on("click", function () {
 		$('html, body').animate({
 			scrollTop: 0
 		}, 1000);
 	});
 
-	/*--/ Star Counter /--*/
+	/*--/ Start Counter /--*/
 	$('.counter').counterUp({
 		delay: 15,
 		time: 2000
 	});
 
-	/*--/ Star Scrolling nav /--*/
+	/*--/ Start Scrolling nav /--*/
 	$('a.js-scroll[href*="#"]:not([href="#"])').on("click", function () {
 		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 			var target = $(this.hash);
@@ -89,7 +89,7 @@
 		}
 	});
 
-	/*--/ Star Typed /--*/
+	/*--/ Start Typed Library for Typing Title Text /--*/
 	if ($('.text-slider').length == 1) {
     var typed_strings = $('.text-slider-items').text();
 		var typed = new Typed('.text-slider', {
